@@ -1,0 +1,225 @@
+/* ✅ הגדרות כלליות */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  background-color: #e5ddd5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ✅ עיצוב טפסים */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  color: #075e54;
+  margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8f9fa;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-container label {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* ✅ עיצוב כפתורים */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #128c7e, #075e54);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #0e776d, #064d42);
+  transform: scale(1.05);
+}
+
+.join-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #128c7e, #075e54);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.join-button:hover {
+  background: linear-gradient(135deg, #0e776d, #064d42);
+  transform: scale(1.05);
+}
+
+/* ✅ עיצוב אזור החדר */
+.room {
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  gap: 15px;
+  padding: 15px;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ✅ עיצוב רשימת חברים */
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* ✅ עיצוב תיבת הצ'אט */
+.center {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: 90vh;
+}
+
+/* ✅ חלון הצ'אט עם גלילה */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 75vh;
+  padding: 10px;
+  background-color: #e5ddd5;
+  border-radius: 8px;
+}
+
+/* ✅ עיצוב הודעות */
+.message {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 12px;
+  font-size: 1rem;
+  width: fit-content;
+  max-width: 70%;
+}
+
+/* ✅ עיצוב אזור שליחת הודעה */
+.send-form {
+  display: flex;
+  padding: 15px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  width: 100%;
+}
+
+.send-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #f8f9fa;
+}
+
+.send-form button {
+  border: none;
+  padding: 12px 16px;
+  background: #128c7e;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+
+.send-form button:hover {
+  background: #0e776d;
+}
+
+/* ✅ כפתורי Copy Invite ו- Logout */
+.room-buttons {
+  display: block;
+  background: linear-gradient(135deg, #128c7e, #075e54);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.room-buttons:hover {
+  background: linear-gradient(135deg, #0e776d, #064d42);
+  transform: scale(1.05);
+}
+
+/* ✅ התאמה למסכים רחבים */
+@media (min-width: 1024px) {
+  .chat-container {
+    width: 100%;
+  }
+}
