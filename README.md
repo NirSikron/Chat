@@ -5,8 +5,11 @@ A real-time chat application that allows users to communicate instantly in a sim
 Features:
 
 📡 Real-Time Messaging – Instant communication between connected users.
+
 🎨 Responsive UI – Optimized for various screen sizes.
+
 ⚡ Fast & Lightweight – Ensures smooth performance.
+
 🔒 Secure Communication – Designed with basic security measures to prevent unwanted access.
 Technologies Used:
 
